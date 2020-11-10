@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <script language="JavaScript" type="text/javascript">
+        function ShowTime()
+        {
+            var NowDate = new Date();
+            var d = NowDate.getDay();
+            var dayNames = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+            document.getElementById('showbox').innerHTML = 'Current time：' + NowDate.toLocaleString() + '（' + dayNames[d] + '）';
+            setTimeout('ShowTime()', 1000);
+        }
+    </script>
+    
+    <head>
+        <title>Wen's Blog</title>
+        <style>
+            body {
+                background-image: url(special.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: left;
+                margin-left:20px;
+                font-size:25px;
+                font-family: fantasy,Arial, Helvetica, sans-serif;;
+            }
+        
+        h1{
+            margin-top:20px;
+            font-size:80px;
+            color: black;
+            font-family: Apple Chancery,fantasy,Arial, Helvetica, sans-serif;
+        }
+        form{
+            text-align: left;
+            font-size:20px;
+            font-family: fantasy,Arial, Helvetica, sans-serif;
+        }
+        a:link { color:#009FCC;text-decoration: none; font-size:20px; font-family: fantasy, Helvetica, sans-serif;}    /* 設定尚未點閱過的連結樣式 */
+        a:visited {color:#FFFFFF;} /* 設定過去曾經閱過的連結 */
+        a:hover {color:#FFFFFF;}
+        
+            </style>
+    </head>
+    <body onload="ShowTime()">
+        <form id="form1" runat="server">
+            <div id = "showbox"></div>
+            <a href="/wencsa.github.io/" target style="color:#009FCC;">Back to Home</a>
+        </form>
+        
+        <h1 >Interesting School Clubs</h1>
+        ◆High School_The Honor Guard◆<br><br>
+        Creating amazing experience and meeting some brilliant friends, <br>
+        performing not only in schools but also at The Sun Moon Lake, <br>
+        Taichung City Government Plaza etc.<br>
+        <img src="p1.jpg" title="TheHonorGuard" border="2" width="400"><br>
+            More info.: <a href="https://www.facebook.com/tcgsthg/" style="color:#009FCC;">Facebook</a>
+            <br> <br> <br>
+            ◆University_NTHU LOVE◆<br><br>
+            A club that holds camps on both winter and summer vacations for
+            the disabled. <br>
+            The satisfying smile on their faces appearing after they join the camps
+            always brighten up our days.<br>
+            <img src="p2.jpg" title="TheHonorGuard" border="2" width="400">.<br>
+                More info.: <a href="https://www.facebook.com/NTHULOVE/" style="color:#009FCC;">Facebook</a>
+                
+                </body>
+</html>
+

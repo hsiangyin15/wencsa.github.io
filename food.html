@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <script language="JavaScript" type="text/javascript">
+        function ShowTime()
+        {
+            var NowDate = new Date();
+            var d = NowDate.getDay();
+            var dayNames = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+            document.getElementById('showbox').innerHTML = 'Current time：' + NowDate.toLocaleString() + '（' + dayNames[d] + '）';
+            setTimeout('ShowTime()', 1000);
+        }
+    </script>
+    
+    <head>
+        <title>Wen's Blog</title>
+        <style>
+            body {
+                background-image: url(food.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                font-size:20px;
+                font-family: fantasy,Arial, Helvetica, sans-serif;;
+            }
+        
+        h1{
+            margin-top:20px;
+            font-size:80px;
+            color: black;
+            font-family: Apple Chancery,fantasy,Arial, Helvetica, sans-serif;
+        }
+        form{
+            text-align: left;
+            font-size:20px;
+            font-family: fantasy,Arial, Helvetica, sans-serif;
+        }
+        h2{
+            font-size:30px;
+            color: #009FCC;
+            font-family: fantasy,Arial, Helvetica, sans-serif;
+        }
+        a:link { color:black;text-decoration: none; font-size:20px; font-family: fantasy, Helvetica, sans-serif;}    /* 設定尚未點閱過的連結樣式 */
+        a:visited {color:#FFFFFF;} /* 設定過去曾經閱過的連結 */
+        a:hover {color:#FFFFFF;}
+        
+            </style>
+    </head>
+    <body onload="ShowTime()">
+        <form id="form1" runat="server">
+            <div id = "showbox"></div>
+            <a href="/wencsa.github.io/" target style="color:#009FCC;">Back to Home</a>
+        </form>
+        
+        <h1 >Food Map</h1>
+        Making this because I took plenty of food photos and I'm hungry now.<br><br>
+      
+        <p>
+        <h2>◆1◆ 私嚐の吃飯</h2>
+        <img src="f1.jpg" width="350"><br>
+        地點＿新竹市東區中正路96巷16號<br>
+        呷啥＿咖哩飯 烏龍麵 寵物友善餐廳<br>
+        價位＿中<br>
+        評價＿好吃的咖哩好吃的漢堡肉 份量普通男生可能吃不飽<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆2◆ 魚鮮會社</h2>
+        <img src="f2.jpg" width="350"><br>
+        地點＿新竹市東區經國路一段379巷10弄5號<br>
+        呷啥＿日本料理的啦<br>
+        價位＿中高<br>
+        評價＿好吃 離清大有點遠<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆3◆ 車庫町</h2>
+        <img src="f3.jpg" width="350"><br>
+        地點＿新竹市東區寶山路452巷8弄13號<br>
+        呷啥＿日式咖哩 丼飯<br>
+        價位＿親民<br>
+        評價＿對又是咖哩，我喜歡咖哩 它的炸肉好吃 在清大後山<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆4◆ 墨咖啡</h2>
+        <img src="f4.jpg" width="350"><br>
+        地點＿新竹市東區林森路180號<br>
+        呷啥＿咖啡廳 有酒<br>
+        價位＿咖啡廳價格<br>
+        評價＿室內偏暗 好吃 我詞窮<br>
+        <br>
+        </p>
+        
+        <h2>◆5◆ 暗室微光</h2>
+        <img src="f5.jpg" width="350"><br>
+        地點＿新竹市東區勝利路97號<br>
+        呷啥＿咖啡廳 <br>
+        價位＿咖啡廳價格<br>
+        評價＿好吃 假日人爆炸多<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆6◆ 川牛木石亭</h2>
+        <img src="f6.jpg" width="350"><br>
+        地點＿新竹市北區北門街145號<br>
+        呷啥＿丼飯<br>
+        價位＿親民<br>
+        評價＿好吃！女生普通的就可以吃飽 附湯超好喝<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆7◆ Bistro88義法餐酒館</h2>
+        <img src="f7.jpg" width="350"><br>
+        地點＿台中市南屯區公益路二段88號<br>
+        呷啥＿飯 麵 披薩 酒<br>
+        價位＿中<br>
+        評價＿好吃 份量蠻多的 <br>
+        然後旁邊那條路的薄多義也很好吃，比較便宜但我找不到我拍的照片嗚嗚<br>
+        反正台中不知道吃什麼就去公益路<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆8◆ 茶六燒肉</h2>
+        <img src="f8.jpg" width="350"><br>
+        地點＿台中市西屯區朝富路258號<br>
+        呷啥＿燒肉<br>
+        價位＿高<br>
+        評價＿好吃！ 湯是一大鍋 甜點雪花冰好吃好看 肉就不多說了我好餓<br>
+        訂不到屋馬可以來吃 只是也要訂<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆9◆ 屋馬燒肉</h2>
+        <img src="f9.jpg" width="350"><br>
+        地點＿台中市西屯區台灣大道三段300號<br>
+        呷啥＿燒肉<br>
+        價位＿高<br>
+        評價＿好吃到母湯！ 湯是超好喝雞湯 甜點哈根達斯 台中萬歲<br>
+        訂不到去吃茶六 只是也要訂<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆10◆ Woosaパンケーキ </h2>
+        <img src="f10.jpg" width="350"><br>
+        地點＿台中市西屯區台灣大道三段251號3樓<br>
+        呷啥＿鬆餅 義大利麵 飯<br>
+        價位＿中高<br>
+        評價＿鬆餅好吃到哭粗乃 正餐意外的很好吃只是份量偏少<br>
+        <br>
+        </p>
+        <p>
+        <h2>◆11◆ 櫻桃計畫 cherry espresso </h2>
+        <img src="f11.jpg" width="350"><br>
+        地點＿台中市西屯區西屯路二段270巷1號<br>
+        呷啥＿咖啡廳<br>
+        價位＿好親民 我愛台中<br>
+        評價＿東西都很棒 價格親民更棒<br>
+        <br>
+        </p>
+    Photos are taken by me,including the Mt.Fuji in the background. <br>
+    I'm starving.
+    </body>
+</html>
+
